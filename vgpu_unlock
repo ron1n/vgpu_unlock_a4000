@@ -142,7 +142,7 @@ script_source = r"""
                 }
 
                 // Ampere
-                if(0x2200 <= actual_devid && actual_devid <= 0x2600) {
+                if(actual_devid == 0x24b0) { //A4000 maybe idk
                     spoofed_devid = 0x2230; // RTX A6000
                 }
 

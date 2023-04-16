@@ -832,7 +832,7 @@ static uint16_t vgpu_unlock_pci_devid_to_vgpu_capable(uint16_t pci_devid)
 		return 0x1e30; /* Quadro RTX 6000 */
 	
 	/* Ampere */
-	case 0x2200 ... 0x2600: 
+	case 0x24b0: /* A4000? Let's see */ 
 		return 0x2230; /* RTX A6000 */
 	}
 
